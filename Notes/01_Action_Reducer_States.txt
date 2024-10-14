@@ -1,0 +1,19 @@
+In store there are three main things 
+1. State
+    // creating store
+    const state = createState(reducer)
+
+2. Reducer ---> Simple function having two params(state, action)...... Reducer will always return a state
+    It takes previous state and add some action to it 
+    Like in example of bank where we want to add deposit $100.
+    in state -> preivious state = $200 
+    action -> deposit = $100
+    so the reducer function return a new state = $200 + $100 = $300
+
+    function reducer(state, action) {
+        return state
+    }
+
+
+3. Dispatch --> fucntion
+
